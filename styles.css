@@ -29,6 +29,11 @@ section {
     scroll-snap-align: start;
 }
 
+nav {
+    width: 100%;
+    position: fixed;
+}
+
 .titlehome {    
     position: absolute;
     top: 45%;
@@ -103,6 +108,159 @@ li > a {
     transform: translate(-50%, -50%);
     animation: bounce 2s infinite;
 }
+
+/* --------------- Products CSS --------------- */
+
+#products {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4E5F3;
+}
+
+.gridcontainer {
+    background-color: #E4E5F3;
+    border-radius: 30px;
+    box-shadow: 0px 0px 34px 5px rgba(0,0,0,0.1);
+    width: 75%;
+    height: 78%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card {
+    margin: auto;
+    width: 70%;
+    height: 85%;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid #F1B101;
+}
+
+.card1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.card2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.card3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.card4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.card5 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.card6 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card7 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.card8 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.cartbutton {
+    line-height: 0;
+    font-family: FontAwesome, Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    border-radius: 30px;
+    border: none;
+    background-color: #e9ac04;
+    padding: 15px;
+    width: 195px;
+    height: 39px;
+    font-size: 1.1em;
+    text-align: start;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.cartbutton:hover {
+    transform: scale(1.05);
+    background-color: #f1b101;
+}
+
+.cartbutton:active {
+    background-color: #e9ab00;
+    transform: scale(1);
+}
+
+.detailbutton {
+    line-height: 0;
+    font-family: FontAwesome, Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    border-radius: 30px;
+    border: none;
+    background-color: #95a5a6;
+    padding: 15px;
+    width: 195px;
+    height: 39px;
+    font-size: 1.1em;
+    text-align: start;
+    color: #FFF;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.detailbutton:hover {
+    transform: scale(1.05);
+    background-color: #a6b2b3;
+}
+
+.detailbutton:active {
+    background-color: #98a4a5;
+    transform: scale(1);
+}
+
+.modeltitle {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.modelimg {
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* --------------- Animation --------------- */
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
